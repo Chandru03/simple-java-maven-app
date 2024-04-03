@@ -16,5 +16,10 @@ pipeline {
                 }
             }
         }
+        stage('After Test Stage') { 
+            steps {
+                sh 'echo "Hello this stage is running now!!!"' 
+            }
+        }
     }
 }
